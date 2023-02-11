@@ -1,0 +1,58 @@
+Todays Agenda:
+
+   9:00-10:15-Selenium Introdution
+   10:15-10:30-Classroom
+   10:30-11:30-Locators
+   11:30-12:00-Classroom
+   12:00-12:30-Dropdown
+   12:30-12:50-Classroom
+   12:50-1:00-Recap
+
+ Selenium Internals:
+                       chromedriver
+   Automation script   -------->  browser(chrome)
+                       edgeDriver
+                      --------->  edge
+   Java language
+
+3 things needed?
+  1.Selenium library
+  2.driver(browser driver)
+  3.Browser
+
+pom.xml?
+   project object model
+    maven repository 
+
+
+Selenium-Java 4.6.0
+Selenium manager:
+  -Download the driver into your local system
+  -Set up the path
+
+Classroom:
+   -Load salesforce application
+   https://login.salesforce.com/
+  -Load facebook.com in ChromeBrowser and EdgeBrowser
+
+DOM
+  Document Object Model
+  right click-inspect
+  f12
+
+  Classroom:
+  Login to salesforce application(https://login.salesforce.com/)
+  credentials:
+  username:hari.radhakrishnan@qeagle.com
+  passsword:Leaf@123
+  Enter username
+  Enter password
+  click Login button
+
+
+Identify whether the dropdown is inside a select tag
+
+Methods of Select Class
+ selectByVisibleText
+ selectByIndex
+ selectByValue

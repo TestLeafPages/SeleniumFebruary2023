@@ -1,0 +1,117 @@
+Todays Agenda:
+  
+  8:15-9:00-Quiz
+  9:00-9:15-Recap(NSE)
+  9:15-10:15-Basic Xpath
+  10:15-10:30-Classroom
+  10:30-11:30-Advanced Xpath
+  11:30-12:00-Classroom
+  12:00-12:45-Arrays
+  12:45-1:00-Classroom
+  1:00-1:10-Problem Solving
+  1:10-1:20-Recap
+
+Basic Xpath:
+  -Absolute Xpath
+     -It starts with "/"
+     -you should start traversing from the root node
+     -tagname is mandatory
+     -It's not preferred
+
+  Ex:  /html/body/div[2]/div[2]/div/form/p/input 
+    
+Relative xpath:
+   -It starts with "//"
+   -tagname is mandatory
+
+Note:
+To open the filter box in the Dom-press ctrl+f
+
+xpath(5):
+ 1.Attribute based xpath
+  Syntax: //tagName[@attributeName='attributeValue']
+  Ex    :  //input[@id='username']
+
+ 2.Text Based xpath:
+   Syntax: //tagName[text()='textValue']
+   Ex    : //label[text()='Password']
+
+ 3.Partial Attribute based xPath:
+   Syntax:  //tagName[contains(@attributeName,'partialAttributeValue')]   
+   Ex:      //input[contains(@class,'Submit')]
+
+ 4.Partial text based xPath:
+   Syntax:  //tagName[contains(text(),'textValue')]  
+   Ex:      //a[contains(text(),'CRM')] 
+
+ 5.Index Based xPath:
+   Syntax:  (//tagName[@attributeName='attributeValue'])[index]
+   Ex:      (//input[@class='inputLogin'])[2]
+
+Classroom:
+  http://leaftaps.com/opentaps/control/main
+  1)Write xpath for the following fields:
+    username
+    Password
+    crm/sfa link
+    leads link
+    CreateLead link
+    firstname ,lastname,companyname
+    CreateLead button   
+
+
+
+
+Advanced xPath(8):
+
+1)Parent to Child:
+  Syntax: BasicXpathforParent/childtagName
+  Ex:     //p[@class='top']/input
+
+2)Child to parent:
+  Syntax:  BasicXpathforChild/parent::parenttagName 
+  Ex:      //input[@id='password']/parent::p
+
+3)GrandParent to GrandChild:
+  Syntax:  BasicXpathforGrandParent//grandChildtagName  
+  Ex:      //form[@id='login']//input
+           //form[@id='login']//input[@class='decorativeSubmit']
+
+4)GrandChild to GrandParent:
+  Syntax:  BasicXpathforGrandChild/ancestor::grandParenttagName      
+  Ex:      //input[@class='decorativeSubmit']/ancestor::form 
+
+5)ElderCousin to YoungerCousin:
+  Syntax: Xpath_ElderCousin/following::youngerCousinTagName    
+  Ex:     //span[text()='Company Name']/following::input
+
+6)YoungerCousin to ElderCousin:
+  Syntax:  youngercousinXpath/preceding::elderCousinTagName
+  Ex:      //input[@name='submitButton']/preceding::input[@id='createLeadForm_lastName']
+
+7)ElderSibling to YoungerSibling:
+   Syntax:  ElderSiblingXpath/following-sibling::youngerSiblingTagName
+   Ex:      //label[text()='Username']/following-sibling::input
+
+8)YoungerSibling to ElderSibling:
+   Syntax:  youngerSiblingXpath/preceding-sibling::elderSiblingTagName
+   Ex:      //input[@id='username']/preceding-sibling::label
+      
+
+
+
+Classroom:
+ 1)Write xPath for First leadid in FindLeads tab
+ 2)Write xPath for lastname based on the label in CreateLead form
+
+ //div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a
+ //span[text()='Last name']/following::input[@id='createLeadForm_lastName']
+
+
+
+Arrays:
+Classroom:
+  String[] names={"Ranjith","Murali","Indhu","Deepa"};
+  Print all the names of this Array
+
+

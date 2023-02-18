@@ -1,0 +1,68 @@
+Todays Agenda:
+
+   9:00-10:00-Inheritance
+   10:00-10:30-Breakout
+   10:30-11:15-Polymorphism
+   11:15-11:30-Breakout
+   11:30-12:30-String
+   12:30-12:50-Breakout
+   12:50-1:00-Recap
+
+   
+Inheritance:
+What?
+    -Inheritance is the concept where building the relationship between two similar classes
+(parent-child)
+
+Why?
+   -To have the common functionalities
+
+How?
+   -Using extends keyword  
+
+Advantage:
+   -Avoid duplicate implementation
+   -reduce code
+
+ Inheritance can be applied between similar types:
+   -Class to Class
+   -Interface to Interface 
+
+Types of Inheritance:
+   -Single level Inheritance
+      Child to parent
+      Ex:Car extends Vehicle
+    -Mutlilevel Inheritance
+    -Multiple Inheritance
+    -Hierarchial 
+    -Hybrid   
+Polymorphism:
+
+   -poly means many
+   -morphism means form
+Definition:
+   It is the ability of a class to provide different implementations of a method.
+   Java allows us to perform the same action in Multiple ways.
+
+ Overloading
+   -Compile Time Polymorphism
+   -Inside the same class
+   -Have same signature
+   -The method name should be same 
+   -The arguments should differ
+   -The datatype can differ
+
+Purpose:   
+     -Simplicity
+
+ Overriding:
+
+ Definition:
+ 
+   SubClass method overrides(change the logic) that is inherited  from the super class method
+   
+   -Runtime Polymorphism
+   -When two or more methods are within different classes
+   - but inherited between them
+   - signature should be same
+   - the logic is going to differ

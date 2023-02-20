@@ -1,0 +1,38 @@
+Today's Agenda:
+
+  - 9:00 - 10:30 -> Abstraction
+  - 10:30 - 11:00 -> Classroom+Break
+  - 11:00 - 12:00 -> Collection-List
+  - 12:00 - 12:30 -> Breakout
+  - 12:30 - 12:45 -> Collection-Set
+  - 12:45 - 1:00  -> Breakout
+  - 1:00  - 1:10  -> Recap
+
+  
+
+Interface:
+  - BluePrint of a class
+  - It is a design pattern
+  - cannot have a method body
+  - 100% abstract method
+  - abstract method - no implementation
+  - cannot instantiate an interface
+  - Reason: No implementation-100% abstract
+
+Abstract class:
+   - Can have both implemented and unimplemented method
+   - If you add a abstract method in abstract class
+   - Mandatory to add abstract keyword
+   - Cannot create an object for abstract class
+   - Reason: It can have unimplemented methods also
+
+
+Classroom:
+  - Load amazon.in
+  - Type mobiles in the search box and do keys.Enter
+  - Find a common value to locate all the prices
+  - Print all the mobile prices by replacing all the comma(String.replaceAll(","),"");
+  - Convert String to Integer using Integer.parseInt(replacedString);
+  - Add it to list
+  - Sort the list to find the minimum value(Collections.sort())
+  - Print the least mobile price

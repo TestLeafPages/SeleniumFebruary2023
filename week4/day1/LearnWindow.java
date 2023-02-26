@@ -24,24 +24,28 @@ public static void main(String[] args) {
 	// CDwindow-1FE138AA824E28AE221F03127D7797BC
 
 	driver.findElement(By.xpath("//span[text()='Open']/..")).click();
+	// To get all window references
+		/*
+		 * Set<String> set = driver.getWindowHandles(); System.out.println(set);
+		 * System.out.println(driver.getCurrentUrl());
+		 * System.out.println(driver.getTitle()); List<String> list = new
+		 * ArrayList<>(set); // list.addAll(set); String windowHandle = list.get(1);
+		 * 
+		 * driver.switchTo().window(windowHandle);
+		 * 
+		 * System.out.println(driver.getCurrentUrl());
+		 * System.out.println(driver.getTitle());
+		 * 
+		 * driver.switchTo().window(currentWindowRef);
+		 * 
+		 * System.out.println(driver.getCurrentUrl());
+		 * System.out.println(driver.getTitle());
+		 * 
+		 * 
+		 * // close a window driver.close(); driver.quit();
+		 */
 	
-	Set<String> set = driver.getWindowHandles();
-	System.out.println(set);
-	System.out.println(driver.getCurrentUrl());
-	System.out.println(driver.getTitle());
-	List<String> list = new ArrayList<>(set);
-//	list.addAll(set);
-	String windowHandle = list.get(1);
 	
-	driver.switchTo().window(windowHandle);
-	
-	System.out.println(driver.getCurrentUrl());
-	System.out.println(driver.getTitle());
-	
-	driver.switchTo().window(currentWindowRef);
-	
-	System.out.println(driver.getCurrentUrl());
-	System.out.println(driver.getTitle());
 	
 	
 	

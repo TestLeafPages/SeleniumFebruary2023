@@ -1,10 +1,14 @@
-package week5.day1;
+package week5.day2;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class CreateLead extends ProjectSpecificMethods {
+	@BeforeTest
+	public void setData() {
+		excelfilename="TC001";
+	}
 	@Test(dataProvider = "sendData")
 	public void runCreateLead(String username, String password,String cname, String fname, String lname) {
 		driver.findElement(By.id("username")).sendKeys(username);
@@ -19,24 +23,5 @@ public class CreateLead extends ProjectSpecificMethods {
 		driver.findElement(By.name("submitButton")).click();
 	}
 
-	@DataProvider
-	public String[][] sendData() {
-		String[][] data = new String[2][5];
-		// First set of data
-		data[0][0] = "Demosalesmanager";
-		data[0][1] = "crmsfa";
-		data[0][2] = "Testleaf";
-		data[0][3] = "Hari";
-		data[0][4] = "R";
-
-		// Second set of data
-		data[1][0] = "Demosalesmanager";
-		data[1][1] = "crmsfa";
-		data[1][2] = "Testleaf";
-		data[1][3] = "Vikram";
-		data[1][4] = "C";
-		
-		return data;
-
-	}
+	
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class EditLead extends ProjectSpecificMethods{
 @Test
 	public void runEditLead() throws InterruptedException {
-		driver.findElement(By.id("username")).sendKeys("DemoCSR");
+		driver.findElement(By.id("username")).sendKeys("Demosalesmanager");
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();
 		driver.findElement(By.linkText("CRM/SFA")).click();
